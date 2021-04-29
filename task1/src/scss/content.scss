@@ -1,0 +1,99 @@
+.content {
+  &__body {
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $big;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin: 0px -10px;
+  }
+
+  &__col {
+    flex: 0 1 50%;
+    background: #fff;
+    margin: 0px 0px 25px 0px;
+    padding: 0px 10px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+
+  &__info {
+    display: flex;
+  }
+
+  &__image {
+    flex: 0 0 80px;
+    padding: 15px;
+  }
+
+  &__description {
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__buy {
+    flex: 0 0 35%;
+    height: 30px;
+    color: #F5F5F5;
+    background: #ED165F;
+    border-radius: 6px;
+  }
+
+  &__buy:hover {
+    transition: 1s;
+    transform: scale(1.1);
+  }
+
+  &__remove {
+    flex: 0 0 35%;
+    color: #ED165F;
+    background: #fff;
+    height: 30px;
+    border-radius: 6px;
+    transition: 1s;
+    position: relative;
+  }
+
+  &__remove::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 16px;
+    left: 15%;
+    top: 25%;
+    background-image: url('../img/sprites/sprite.svg#remove');
+  }
+
+  &__remove:hover {
+    transition: 1s;
+    transform: scale(0.9);
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .content__col {
+    flex: 0 1 80%;
+  }
+}
+
+

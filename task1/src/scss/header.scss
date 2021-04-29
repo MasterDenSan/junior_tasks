@@ -1,0 +1,120 @@
+.header {
+  &__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+  }
+
+  &__logo {
+    padding: 0 5px
+  }
+
+  &__menu-btn {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  &__menu-btn span,
+  &__menu-btn::before,
+  &__menu-btn::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000;
+  }
+
+  &__menu-btn::before,
+  &__menu-btn::after {
+    content: '';
+  }
+
+  &__menu-btn::before {
+    top: 0;
+  }
+
+  &__menu-btn::after {
+    bottom: 0;
+  }
+
+  &__menu-btn span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  &__search {
+    position: relative;
+    width: 300px;
+  }
+
+  &__search input[type=search] {
+    width: 100%;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: 2px solid #ed165f;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  &__search button[type=submit] {
+    background-color: #fff;
+    background-image: url('../img/sprites/sprite.svg#search');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+}
+
+.active-block {
+  &__body {
+    display: flex;
+    padding: 0 5px;
+  }
+
+  &__item {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer
+  }
+
+  &__item:hover {
+    transition: 1s;
+    transform: scale(1.1);
+  }
+}
+
+
+

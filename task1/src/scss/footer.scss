@@ -1,0 +1,59 @@
+.footer {
+  &__body {
+    height: 120px;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__logo {
+    padding: 0 5px;
+  }
+
+  &__contacts {
+    margin: 0 5px
+  }
+
+  &__phone {
+    margin: 5px 0
+
+  }
+
+  &__address {
+  }
+}
+
+.social-block {
+  width: 30%;
+
+  &__body {
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 5px 10px;
+  }
+
+  &__item a {
+    display: flex;
+    color: #000;
+  }
+
+  &__item img {
+    width: 17px;
+    height: 17px;
+    margin: 0 5px;
+
+  }
+
+  &__title {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Подключение шрифтов */
+@import "fonts.scss";
+
+/* Размеры шрифтов */
+$small: 10px;
+$normal: 16px;
+$big: 24px;
+$extra_big: 16px;
+
+
+@import "clear_style.scss";
+@import "header.scss";
+@import "content.scss";
+@import "menu.scss";
+@import "footer.scss";
+
+
+body {
+  font-family: 'Conv_ARIALN';
+  font-size: $normal;
+  font-weight: normal;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  display: flex;
+  padding: 30px 0px 30px 0px;
+}
